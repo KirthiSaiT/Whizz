@@ -1,73 +1,69 @@
-# Welcome to your Lovable project
+# Whizz - AI Resume Scanner
 
-## Project info
+## Project Overview
 
-**URL**: https://lovable.dev/projects/cc9818ca-854e-4e81-8f90-c43a3f38ebd5
+Whizz is an advanced AI-powered resume scanner designed to provide comprehensive resume analysis. It leverages cutting-edge AI technology to offer smart insights, precise scoring, predictive success analysis, and actionable recommendations to maximize job search success.
 
-## How can I edit this code?
+## Technologies Used
 
-There are several ways of editing your application.
+This project is built with a modern web development stack:
 
-**Use Lovable**
+*   **Vite**: A fast build tool that provides a lightning-fast development experience.
+*   **React**: A JavaScript library for building user interfaces.
+*   **TypeScript**: A typed superset of JavaScript that compiles to plain JavaScript.
+*   **shadcn-ui**: A collection of reusable components built with Radix UI and Tailwind CSS.
+*   **Tailwind CSS**: A utility-first CSS framework for rapidly building custom designs.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/cc9818ca-854e-4e81-8f90-c43a3f38ebd5) and start prompting.
+## Setup and Installation
 
-Changes made via Lovable will be committed automatically to this repo.
+To get the project up and running on your local machine, follow these steps:
 
-**Use your preferred IDE**
+### Prerequisites
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+*   Node.js (LTS version recommended)
+*   npm or Yarn
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### Installation
 
-Follow these steps:
+1.  **Clone the repository:**
+    ```bash
+    git clone <YOUR_GIT_REPOSITORY_URL>
+    cd WhizzOz
+    ```
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    # or if you use yarn
+    # yarn install
+    ```
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+### Running the Development Server
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+To start the development server with auto-reloading and an instant preview:
 
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+```bash
 npm run dev
+# or if you use yarn
+# yarn dev
 ```
 
-**Edit a file directly in GitHub**
+This will typically start the application on `http://localhost:8080` (or another available port).
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Project Structure
 
-**Use GitHub Codespaces**
+The key directories and files in this project include:
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+*   `public/`: Contains static assets like images (`whizz-logo.png`, `favicon.ico`), `robots.txt`, etc.
+*   `src/`: Contains the main application source code.
+    *   `src/main.tsx`: The entry point of the React application.
+    *   `src/App.css`: Global CSS for the application.
+    *   `src/index.css`: Tailwind CSS base and utility imports, and design system definitions.
+    *   `src/pages/`: Contains the main page components (e.g., `Index.tsx`).
+    *   `src/components/`: Reusable UI components.
+*   `index.html`: The main HTML file, where the React application is mounted. It also contains meta tags for SEO and social media sharing.
+*   `vite.config.ts`: Vite configuration file.
+*   `tailwind.config.ts`: Tailwind CSS configuration file.
 
-## What technologies are used for this project?
+Author 
+Kirthi Sai
 
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/cc9818ca-854e-4e81-8f90-c43a3f38ebd5) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
