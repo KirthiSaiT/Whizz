@@ -55,25 +55,25 @@ const Index = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
-              <div className="flex items-center gap-3">
-                <div className="bg-gradient-to-r from-blue-600 to-purple-600 p-2 rounded-lg">
-                  <Zap className="w-6 h-6 text-white" />
+              <div className="flex items-center gap-2 sm:gap-3">
+                <div className="bg-gradient-to-r from-blue-600 to-purple-600 p-1.5 sm:p-2 rounded-lg">
+                  <Zap className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
                 </div>
                 <div>
-                  <h1 className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+                  <h1 className="text-xl sm:text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
                     WHIZZ
                   </h1>
-                  <p className="text-xs text-gray-500">AI Resume Scanner</p>
+                  <p className="text-[10px] sm:text-xs text-gray-500">AI Resume Scanner</p>
                 </div>
               </div>
             </div>
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-2 sm:gap-4">
               <SignedIn>
                 <UserButton afterSignOutUrl="/" />
               </SignedIn>
               <SignedOut>
                 <SignInButton mode="modal">
-                  <Button variant="secondary" className="bg-blue-600 text-white font-medium">
+                  <Button variant="secondary" className="bg-blue-600 text-white text-sm sm:text-base font-medium px-3 sm:px-4">
                     Sign in
                   </Button>
                 </SignInButton>
@@ -85,75 +85,75 @@ const Index = () => {
       {/* Auth Gate */}
       <SignedIn>
         {/* Main resume analysis interface: header, cards, workflows, etc */}
-        <div className="max-w-6xl mx-auto space-y-8 p-4">
+        <div className="max-w-6xl mx-auto space-y-4 sm:space-y-8 p-3 sm:p-4">
           {/* Enhanced Header Section */}
-          <div className="text-center py-12">
-            <div className="flex justify-center items-center mb-6">
-              <div className="bg-gradient-to-r from-blue-600 to-purple-600 p-6 rounded-full shadow-xl">
-                <Target className="w-12 h-12 text-white" />
+          <div className="text-center py-6 sm:py-12">
+            <div className="flex justify-center items-center mb-4 sm:mb-6">
+              <div className="bg-gradient-to-r from-blue-600 to-purple-600 p-4 sm:p-6 rounded-full shadow-xl">
+                <Target className="w-8 h-8 sm:w-12 sm:h-12 text-white" />
               </div>
             </div>
-            <h2 className="text-5xl font-bold text-gray-900 mb-6">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">
               The Ultimate AI Resume Scanner
             </h2>
-            <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed mb-8">
+            <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed mb-6 sm:mb-8 px-4">
               WHIZZ leverages cutting-edge AI technology to provide comprehensive resume analysis with 
               smart insights, precise scoring, predictive success analysis, and actionable recommendations to maximize your job search success.
             </p>
             
             {/* Enhanced Feature Highlights */}
-            <div className="grid md:grid-cols-5 gap-4 max-w-5xl mx-auto">
-              <div className="bg-white/60 backdrop-blur-sm rounded-lg p-4 border border-white/20">
-                <Shield className="w-8 h-8 text-blue-600 mx-auto mb-2" />
-                <h3 className="font-semibold text-gray-900 text-sm">AI-Powered Analysis</h3>
-                <p className="text-xs text-gray-600">Advanced ML algorithms</p>
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-2 sm:gap-4 max-w-5xl mx-auto px-2">
+              <div className="bg-white/60 backdrop-blur-sm rounded-lg p-3 sm:p-4 border border-white/20">
+                <Shield className="w-6 h-6 sm:w-8 sm:h-8 text-blue-600 mx-auto mb-2" />
+                <h3 className="font-semibold text-gray-900 text-xs sm:text-sm">AI-Powered Analysis</h3>
+                <p className="text-[10px] sm:text-xs text-gray-600">Advanced ML algorithms</p>
               </div>
-              <div className="bg-white/60 backdrop-blur-sm rounded-lg p-4 border border-white/20">
-                <TrendingUp className="w-8 h-8 text-green-600 mx-auto mb-2" />
-                <h3 className="font-semibold text-gray-900 text-sm">Smart Scoring</h3>
-                <p className="text-xs text-gray-600">ATS compatibility rating</p>
+              <div className="bg-white/60 backdrop-blur-sm rounded-lg p-3 sm:p-4 border border-white/20">
+                <TrendingUp className="w-6 h-6 sm:w-8 sm:h-8 text-green-600 mx-auto mb-2" />
+                <h3 className="font-semibold text-gray-900 text-xs sm:text-sm">Smart Scoring</h3>
+                <p className="text-[10px] sm:text-xs text-gray-600">ATS compatibility rating</p>
               </div>
-              <div className="bg-white/60 backdrop-blur-sm rounded-lg p-4 border border-white/20">
-                <Users className="w-8 h-8 text-purple-600 mx-auto mb-2" />
-                <h3 className="font-semibold text-gray-900 text-sm">Skills Analysis</h3>
-                <p className="text-xs text-gray-600">Match skills to jobs</p>
+              <div className="bg-white/60 backdrop-blur-sm rounded-lg p-3 sm:p-4 border border-white/20">
+                <Users className="w-6 h-6 sm:w-8 sm:h-8 text-purple-600 mx-auto mb-2" />
+                <h3 className="font-semibold text-gray-900 text-xs sm:text-sm">Skills Analysis</h3>
+                <p className="text-[10px] sm:text-xs text-gray-600">Match skills to jobs</p>
               </div>
-              <div className="bg-white/60 backdrop-blur-sm rounded-lg p-4 border border-white/20">
-                <Star className="w-8 h-8 text-yellow-600 mx-auto mb-2" />
-                <h3 className="font-semibold text-gray-900 text-sm">Predictive Insights</h3>
-                <p className="text-xs text-gray-600">Interview success rates</p>
+              <div className="bg-white/60 backdrop-blur-sm rounded-lg p-3 sm:p-4 border border-white/20">
+                <Star className="w-6 h-6 sm:w-8 sm:h-8 text-yellow-600 mx-auto mb-2" />
+                <h3 className="font-semibold text-gray-900 text-xs sm:text-sm">Predictive Insights</h3>
+                <p className="text-[10px] sm:text-xs text-gray-600">Interview success rates</p>
               </div>
-              <div className="bg-white/60 backdrop-blur-sm rounded-lg p-4 border border-white/20">
-                <Zap className="w-8 h-8 text-red-600 mx-auto mb-2" />
-                <h3 className="font-semibold text-gray-900 text-sm">Real-time Tips</h3>
-                <p className="text-xs text-gray-600">Instant improvements</p>
+              <div className="bg-white/60 backdrop-blur-sm rounded-lg p-3 sm:p-4 border border-white/20">
+                <Zap className="w-6 h-6 sm:w-8 sm:h-8 text-red-600 mx-auto mb-2" />
+                <h3 className="font-semibold text-gray-900 text-xs sm:text-sm">Real-time Tips</h3>
+                <p className="text-[10px] sm:text-xs text-gray-600">Instant improvements</p>
               </div>
             </div>
           </div>
 
           {/* Enhanced Input Section with More Details */}
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
             <Card className="border-0 shadow-lg bg-white/80 backdrop-blur-sm">
-              <CardHeader>
-                <CardTitle className="flex items-center gap-2">
+              <CardHeader className="p-4 sm:p-6">
+                <CardTitle className="flex items-center gap-2 text-lg sm:text-xl">
                   <FileText className="w-5 h-5 text-blue-600" />
                   Your Resume
                 </CardTitle>
-                <CardDescription>
+                <CardDescription className="text-sm">
                   Upload your resume file (PDF, DOC, DOCX) or paste the text content. 
                   Our AI will analyze format, content, keywords, and structure for optimal ATS compatibility.
                 </CardDescription>
               </CardHeader>
-              <CardContent className="space-y-4">
+              <CardContent className="space-y-4 p-4 sm:p-6">
                 <ResumeUpload onTextExtracted={setResumeText} />
                 <div>
-                  <Label htmlFor="resume-text">Or paste your resume text here:</Label>
+                  <Label htmlFor="resume-text" className="text-sm">Or paste your resume text here:</Label>
                   <Textarea
                     id="resume-text"
                     placeholder="Paste your complete resume content here for comprehensive AI analysis..."
                     value={resumeText}
                     onChange={(e) => setResumeText(e.target.value)}
-                    className="min-h-[200px] mt-2"
+                    className="min-h-[150px] sm:min-h-[200px] mt-2 text-sm"
                   />
                   <div className="flex justify-between items-center mt-2 text-xs text-gray-500">
                     <span>{resumeText.length} characters</span>
@@ -164,22 +164,22 @@ const Index = () => {
             </Card>
 
             <Card className="border-0 shadow-lg bg-white/80 backdrop-blur-sm">
-              <CardHeader>
-                <CardTitle className="flex items-center gap-2">
+              <CardHeader className="p-4 sm:p-6">
+                <CardTitle className="flex items-center gap-2 text-lg sm:text-xl">
                   <Upload className="w-5 h-5 text-green-600" />
                   Target Job Description
                 </CardTitle>
-                <CardDescription>
+                <CardDescription className="text-sm">
                   Paste the complete job description to get personalized analysis and optimization suggestions. 
                   Include requirements, qualifications, and preferred skills for best results.
                 </CardDescription>
               </CardHeader>
-              <CardContent>
+              <CardContent className="p-4 sm:p-6">
                 <Textarea
                   placeholder="Paste the complete job description including requirements, qualifications, responsibilities, and preferred skills..."
                   value={jobDescription}
                   onChange={(e) => setJobDescription(e.target.value)}
-                  className="min-h-[300px]"
+                  className="min-h-[150px] sm:min-h-[300px] text-sm"
                 />
                 <div className="flex justify-between items-center mt-2 text-xs text-gray-500">
                   <span>{jobDescription.length} characters</span>
@@ -192,16 +192,16 @@ const Index = () => {
           {/* Analysis Progress Info */}
           {(resumeText.trim() || jobDescription.trim()) && (
             <Card className="border-0 shadow-lg bg-gradient-to-r from-blue-50 to-purple-50">
-              <CardContent className="p-6">
+              <CardContent className="p-4 sm:p-6">
                 <div className="text-center">
-                  <h3 className="text-lg font-semibold text-gray-900 mb-2">Ready for AI Analysis</h3>
-                  <p className="text-gray-600 mb-4">
+                  <h3 className="text-base sm:text-lg font-semibold text-gray-900 mb-2">Ready for AI Analysis</h3>
+                  <p className="text-sm sm:text-base text-gray-600 mb-4">
                     WHIZZ will analyze {resumeText.trim() ? '✓ Resume content' : ''} 
                     {resumeText.trim() && jobDescription.trim() ? ' and ' : ''} 
                     {jobDescription.trim() ? '✓ Job requirements' : ''} 
                     to provide comprehensive insights and optimization recommendations.
                   </p>
-                  <div className="flex justify-center gap-4 text-sm text-gray-500">
+                  <div className="flex flex-wrap justify-center gap-2 sm:gap-4 text-xs sm:text-sm text-gray-500">
                     <span>🎯 ATS Compatibility Check</span>
                     <span>📊 Skills Match Analysis</span>
                     <span>💡 Smart Suggestions</span>
@@ -217,21 +217,21 @@ const Index = () => {
               onClick={analyzeResume}
               disabled={isAnalyzing}
               size="lg"
-              className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-16 py-8 text-xl font-semibold rounded-full shadow-xl transform hover:scale-105 transition-all duration-200"
+              className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 sm:px-16 py-6 sm:py-8 text-lg sm:text-xl font-semibold rounded-full shadow-xl transform hover:scale-105 transition-all duration-200"
             >
               {isAnalyzing ? (
                 <>
-                  <div className="animate-spin rounded-full h-6 w-6 border-b-2 border-white mr-4"></div>
-                  Analyzing with WHIZZ AI...
+                  <div className="animate-spin rounded-full h-5 w-5 sm:h-6 sm:w-6 border-b-2 border-white mr-2 sm:mr-4"></div>
+                  <span className="text-sm sm:text-base">Analyzing with WHIZZ AI...</span>
                 </>
               ) : (
                 <>
-                  <TrendingUp className="w-6 h-6 mr-4" />
-                  Analyze My Resume with WHIZZ
+                  <TrendingUp className="w-5 h-5 sm:w-6 sm:h-6 mr-2 sm:mr-4" />
+                  <span className="text-sm sm:text-base">Analyze My Resume with WHIZZ</span>
                 </>
               )}
             </Button>
-            <p className="text-sm text-gray-500 mt-3">
+            <p className="text-xs sm:text-sm text-gray-500 mt-2 sm:mt-3">
               Analysis typically takes 2-3 seconds • 100% secure and private
             </p>
           </div>
